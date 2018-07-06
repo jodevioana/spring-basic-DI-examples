@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'de.mindsmedical'
+group 'org.spring.di'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
