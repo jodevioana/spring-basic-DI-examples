@@ -3,7 +3,7 @@ package byConstructor.configuration;
 import byConstructor.controller.Controller;
 import byConstructor.controller.ControllerImpl;
 import byConstructor.repository.AnimalDao;
-import byConstructor.repository.AnimalDaoMongoDB;
+import byConstructor.repository.*;
 import byConstructor.validator.Validator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +23,7 @@ public class Context {
 
     @Bean
     public AnimalDao animalDao() {
-        return new AnimalDaoMongoDB();
-//        return new AnimalDaoSqlServer();
+//        return new AnimalDaoMongoDB();
+        return new AnimalDaoSqlServer();
     }
 }
